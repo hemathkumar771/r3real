@@ -1,0 +1,29 @@
+/* Fading background transition */
+@keyframes fadeBackground {
+  0% {
+    background: #f0f8ff; /* Start with light blue */
+  }
+  50% {
+    background: #add8e6; /* Middle color */
+  }
+  100% {
+    background: #f0f8ff; /* End with light blue */
+  }
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  animation: fadeBackground 10s infinite; /* Apply the animation */
+  font-family: 'Roboto Slab', serif; /* Keeping your custom font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
